@@ -17,10 +17,9 @@ git clone https://github.com/hashicorp/vault $VAULT_PATH
 cd $VAULT_PATH
 
 # Compile vault
-make bootstrap
-make dev
+make bootstrap && make dev
 
-# Install vault to /usr/loca/bimn
+# Install vault to /usr/loca/bin
 cp $GOPATH/bin/vault /usr/local/bin/vault
 
 # Remove uneeded packages
